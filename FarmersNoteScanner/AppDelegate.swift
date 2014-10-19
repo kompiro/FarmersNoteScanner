@@ -15,13 +15,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        window.close()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
-
+    
+    func applicationShouldTerminateAfterLastWindowClosed(NSApplication!) -> Bool {
+        return true
+    }
+    
+    func application(sender: NSApplication, openFiles filenames: [AnyObject]) {
+        var text = ""
+        for object in filenames {
+            let filename = object as String
+            text += filename + "\n"
+        }
+        text.writeToFile("/tmp/output.txt", atomically: true, encoding: NSUTF8StringEncoding)
+    }
 
 }
 

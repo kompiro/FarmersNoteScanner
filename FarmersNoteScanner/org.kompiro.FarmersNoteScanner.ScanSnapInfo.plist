@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Info</key>
+  <dict>
+    <key>FileVersion</key>
+    <integer>1</integer>
+    <key>IFVersion</key>
+    <integer>1</integer>
+  </dict>
+  <key>Launch</key>
+  <dict>
+    <key>QuickMenu</key>
+    <integer>1</integer>
+    <key>AppPath</key>
+    <string>/Applications/FarmersNoteScanner.app</string>
+    <key>ResultFileType</key>
+    <integer>0</integer>
+    <key>QuickMenuLabel</key>
+    <string>Farmers Note Scanner</string>
+    <key>Label</key>
+    <string>Farmers Note Scanner</string>
+    <key>QuickMenuDescription</key>
+    <string>Scan Farmer&apos;s note</string>
+    <key>SaveFolderMode</key>
+    <integer>1</integer>
+  </dict>
+  <key>Scanning</key>
+  <dict>
+    <key>SaveFolder</key>
+    <string>~/Pictures</string>
+  </dict>
+</dict>
+</plist>
