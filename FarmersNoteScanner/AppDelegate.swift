@@ -12,10 +12,15 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    
+    let client : HatenaClient!
+    
+    override init() {
+        client = HatenaClient()
+    }
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        window.close()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -26,12 +31,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func application(sender: NSApplication, openFiles filenames: [AnyObject]) {
-        var text = ""
-        for object in filenames {
-            let filename = object as String
-            text += filename + "\n"
+        NSLog("start FarmersNoteScanner")
+        let sema = dispatch_semaphore_create(0)
+        /*
+        client.requestMyInformation { (task, responseObject) -> Void in
+            NSLog("complete \(responseObject)")
+            dispatch_semaphore_signal(sema)
+            return
         }
-        text.writeToFile("/tmp/output.txt", atomically: true, encoding: NSUTF8StringEncoding)
+*/
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER)
+        client.uploadFotolife(filenames,{ (response, responseObject, error) in
+            NSLog("response \(response)")
+            NSLog("object \(responseObject)")
+            NSLog("error \(error)")
+            dispatch_semaphore_signal(sema)
+            return
+        })
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER)
+        sender.terminate(nil)
     }
 
 }

@@ -7,41 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D404D1D19FC9FCE00C3D4A7 /* HatenaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D404D1C19FC9FCE00C3D4A7 /* HatenaClient.swift */; };
 		5D4F02AE19F3DC3900F63B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F02AD19F3DC3900F63B1E /* AppDelegate.swift */; };
 		5D4F02B019F3DC3900F63B1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F02AF19F3DC3900F63B1E /* Images.xcassets */; };
 		5D4F02B319F3DC3900F63B1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F02B119F3DC3900F63B1E /* MainMenu.xib */; };
-		5D4F02BF19F3DC3900F63B1E /* FarmersNoteScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F02BE19F3DC3900F63B1E /* FarmersNoteScannerTests.swift */; };
-		5D4F02C919F3DD4700F63B1E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4F02C819F3DD4700F63B1E /* Cocoa.framework */; };
 		5D4F02CB19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F02CA19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist */; };
 		5D4F02CF19F40C3B00F63B1E /* AtomXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F02CE19F40C3B00F63B1E /* AtomXML.swift */; };
-		5D4F02D119F40C5100F63B1E /* AtomXMLTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F02D019F40C5100F63B1E /* AtomXMLTest.swift */; };
+		5D8E079C19F535B600BFE497 /* Hatena.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E079B19F535B600BFE497 /* Hatena.swift */; };
 		9E3F9C905FA38D7A438E723C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8A526A782D297F49646574 /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5D4F02B919F3DC3900F63B1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5D4F02A019F3DC3900F63B1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D4F02A719F3DC3900F63B1E;
-			remoteInfo = FarmersNoteScanner;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		5D404D1C19FC9FCE00C3D4A7 /* HatenaClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatenaClient.swift; sourceTree = "<group>"; };
 		5D4F02A819F3DC3900F63B1E /* FarmersNoteScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmersNoteScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4F02AC19F3DC3900F63B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D4F02AD19F3DC3900F63B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4F02AF19F3DC3900F63B1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D4F02B219F3DC3900F63B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		5D4F02B819F3DC3900F63B1E /* FarmersNoteScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmersNoteScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D4F02BD19F3DC3900F63B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D4F02BE19F3DC3900F63B1E /* FarmersNoteScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmersNoteScannerTests.swift; sourceTree = "<group>"; };
 		5D4F02C819F3DD4700F63B1E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5D4F02CA19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist; sourceTree = "<group>"; };
 		5D4F02CC19F3EB8600F63B1E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		5D4F02CE19F40C3B00F63B1E /* AtomXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomXML.swift; sourceTree = "<group>"; };
-		5D4F02D019F40C5100F63B1E /* AtomXMLTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomXMLTest.swift; sourceTree = "<group>"; };
+		5D8E079B19F535B600BFE497 /* Hatena.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hatena.swift; sourceTree = "<group>"; };
 		5DF9587D19F462A00086DE11 /* FarmersNoteScanner-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FarmersNoteScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		7B8A526A782D297F49646574 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9402141E8819255A584DCA5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,14 +44,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D4F02B519F3DC3900F63B1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D4F02C919F3DD4700F63B1E /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,7 +52,6 @@
 			children = (
 				5D4F02C819F3DD4700F63B1E /* Cocoa.framework */,
 				5D4F02AA19F3DC3900F63B1E /* FarmersNoteScanner */,
-				5D4F02BB19F3DC3900F63B1E /* FarmersNoteScannerTests */,
 				5D4F02A919F3DC3900F63B1E /* Products */,
 				70EF1BA7D2722BB04DF26A3D /* Pods */,
 				A14E68A835E466864E955B79 /* Frameworks */,
@@ -84,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				5D4F02A819F3DC3900F63B1E /* FarmersNoteScanner.app */,
-				5D4F02B819F3DC3900F63B1E /* FarmersNoteScannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +69,7 @@
 		5D4F02AA19F3DC3900F63B1E /* FarmersNoteScanner */ = {
 			isa = PBXGroup;
 			children = (
+				5D404D1C19FC9FCE00C3D4A7 /* HatenaClient.swift */,
 				5D4F02AD19F3DC3900F63B1E /* AppDelegate.swift */,
 				5D4F02AF19F3DC3900F63B1E /* Images.xcassets */,
 				5D4F02B119F3DC3900F63B1E /* MainMenu.xib */,
@@ -99,6 +77,7 @@
 				5D4F02CC19F3EB8600F63B1E /* MyPlayground.playground */,
 				5D4F02CE19F40C3B00F63B1E /* AtomXML.swift */,
 				5DF9587D19F462A00086DE11 /* FarmersNoteScanner-Bridging-Header.h */,
+				5D8E079B19F535B600BFE497 /* Hatena.swift */,
 			);
 			path = FarmersNoteScanner;
 			sourceTree = "<group>";
@@ -108,24 +87,6 @@
 			children = (
 				5D4F02CA19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist */,
 				5D4F02AC19F3DC3900F63B1E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5D4F02BB19F3DC3900F63B1E /* FarmersNoteScannerTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D4F02BE19F3DC3900F63B1E /* FarmersNoteScannerTests.swift */,
-				5D4F02BC19F3DC3900F63B1E /* Supporting Files */,
-				5D4F02D019F40C5100F63B1E /* AtomXMLTest.swift */,
-			);
-			path = FarmersNoteScannerTests;
-			sourceTree = "<group>";
-		};
-		5D4F02BC19F3DC3900F63B1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D4F02BD19F3DC3900F63B1E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,24 +130,6 @@
 			productReference = 5D4F02A819F3DC3900F63B1E /* FarmersNoteScanner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5D4F02B719F3DC3900F63B1E /* FarmersNoteScannerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5D4F02C519F3DC3900F63B1E /* Build configuration list for PBXNativeTarget "FarmersNoteScannerTests" */;
-			buildPhases = (
-				5D4F02B419F3DC3900F63B1E /* Sources */,
-				5D4F02B519F3DC3900F63B1E /* Frameworks */,
-				5D4F02B619F3DC3900F63B1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5D4F02BA19F3DC3900F63B1E /* PBXTargetDependency */,
-			);
-			name = FarmersNoteScannerTests;
-			productName = FarmersNoteScannerTests;
-			productReference = 5D4F02B819F3DC3900F63B1E /* FarmersNoteScannerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +141,6 @@
 				TargetAttributes = {
 					5D4F02A719F3DC3900F63B1E = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					5D4F02B719F3DC3900F63B1E = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 5D4F02A719F3DC3900F63B1E;
 					};
 				};
 			};
@@ -219,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				5D4F02A719F3DC3900F63B1E /* FarmersNoteScanner */,
-				5D4F02B719F3DC3900F63B1E /* FarmersNoteScannerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,13 +170,6 @@
 				5D4F02CB19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist in Resources */,
 				5D4F02B019F3DC3900F63B1E /* Images.xcassets in Resources */,
 				5D4F02B319F3DC3900F63B1E /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D4F02B619F3DC3900F63B1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,29 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8E079C19F535B600BFE497 /* Hatena.swift in Sources */,
+				5D404D1D19FC9FCE00C3D4A7 /* HatenaClient.swift in Sources */,
 				5D4F02CF19F40C3B00F63B1E /* AtomXML.swift in Sources */,
 				5D4F02AE19F3DC3900F63B1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D4F02B419F3DC3900F63B1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D4F02D119F40C5100F63B1E /* AtomXMLTest.swift in Sources */,
-				5D4F02BF19F3DC3900F63B1E /* FarmersNoteScannerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5D4F02BA19F3DC3900F63B1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5D4F02A719F3DC3900F63B1E /* FarmersNoteScanner */;
-			targetProxy = 5D4F02B919F3DC3900F63B1E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5D4F02B119F3DC3900F63B1E /* MainMenu.xib */ = {
@@ -422,44 +338,6 @@
 			};
 			name = Release;
 		};
-		5D4F02C619F3DC3900F63B1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9402141E8819255A584DCA5 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FarmersNoteScannerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmersNoteScanner.app/Contents/MacOS/FarmersNoteScanner";
-			};
-			name = Debug;
-		};
-		5D4F02C719F3DC3900F63B1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8B5AE8A5B80627A2AABB25C /* Pods.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FarmersNoteScannerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmersNoteScanner.app/Contents/MacOS/FarmersNoteScanner";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,15 +355,6 @@
 			buildConfigurations = (
 				5D4F02C319F3DC3900F63B1E /* Debug */,
 				5D4F02C419F3DC3900F63B1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5D4F02C519F3DC3900F63B1E /* Build configuration list for PBXNativeTarget "FarmersNoteScannerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D4F02C619F3DC3900F63B1E /* Debug */,
-				5D4F02C719F3DC3900F63B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

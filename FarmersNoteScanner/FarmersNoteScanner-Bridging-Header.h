@@ -7,3 +7,9 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+
+#import <BDBOAuth1Manager/BDBOAuth1RequestOperationManager.h>
+#import <BDBOAuth1Manager/BDBOAuth1RequestSerializer.h>
+#import <BDBOAuth1Manager/BDBOAuth1SessionManager.h>
+#import <BDBOAuth1Manager/NSDictionary+BDBOAuth1Manager.h>
+#import <BDBOAuth1Manager/NSString+BDBOAuth1Manager.h>
