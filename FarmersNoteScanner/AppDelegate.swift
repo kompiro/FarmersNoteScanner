@@ -39,13 +39,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             dispatch_semaphore_signal(sema)
             return
         }
-*/
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER)
+*/
         client.uploadFotolife(filenames,{ (response, responseObject, error) in
-            NSLog("response \(response)")
-            NSLog("object \(responseObject)")
-            NSLog("error \(error)")
-            dispatch_semaphore_signal(sema)
+            NSLog("Fotolife Error \(error)")
+            if let xmlObject = responseObject as? NSXMLDocument {
+                let nodes = xmlObject.nodesForXPath("/entry/hatena:imageurl", error: nil)
+                let imagePath = nodes![0].stringValue
+                NSLog("imagePath \(imagePath)")
+                self.client.postBlog(imagePath,
+                    completionHandler: { (response, responseObject, error) in
+                        NSLog("completed \(response)")
+                        NSLog("responseObject \(responseObject)")
+                        NSLog("Post Blog Error \(error)")
+                        dispatch_semaphore_signal(sema)
+                })
+            }
             return
         })
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER)

@@ -26,6 +26,7 @@ class HatenaClient {
     init() {
         manager = BDBOAuth1SessionManager(baseURL: basePath,consumerKey: consumerKey,consumerSecret: consumerSecret)
         manager.completionQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
     }
     
     func requestRequestToken() {
@@ -84,12 +85,53 @@ class HatenaClient {
             let header = serializer.OAuthAuthorizationHeaderForMethod("POST", URLString: "http://f.hatena.ne.jp/atom/post", parameters: nil,error: nil)
             NSLog(header)
             request.setValue(header, forHTTPHeaderField: "Authorization")
+            let defaultResponseSerializer = manager.responseSerializer
+            manager.responseSerializer = AFXMLDocumentResponseSerializer(XMLDocumentOptions: 0)
+            manager.responseSerializer.acceptableContentTypes = NSSet(objects: "application/x.atom+xml")
             let dataTask = manager.dataTaskWithRequest(
                 request,
-                completionHandler: completionHandler
+                completionHandler: {
+                    (response ,responseObject, error) in
+                    completionHandler(response: response, responseObject: responseObject, error: error)
+                    self.manager.responseSerializer = defaultResponseSerializer
+                }
             )
             dataTask.resume()
-            
         }
     }
+    
+    func postBlog(imagePath: String, completionHandler: (response: NSURLResponse!, responseObject: AnyObject!, error: NSError!) -> Void) {
+        let atom = BlogXML()
+        let content = "## 本日の作業ノート\n\n<img src=\"\(imagePath)\"/>"
+        NSLog("content \(content)")
+        let text = atom.generate(content)
+        NSLog("text \(text)")
+        let targetURL = "https://blog.hatena.ne.jp/kompiro/famersnote.hateblo.jp/atom/entry"
+        let url = NSURL(string: targetURL)
+        let request = NSMutableURLRequest()
+        request.URL = url
+        request.HTTPMethod = "POST"
+        request.HTTPBody = text.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        request.setValue("application/xml", forHTTPHeaderField: "Content-Type")
+        let serializer = manager.requestSerializer
+        let header = serializer.OAuthAuthorizationHeaderForMethod("POST",
+            URLString: targetURL,
+            parameters: nil,
+            error: nil)
+        request.setValue(header, forHTTPHeaderField: "Authorization")
+        NSLog("Auth header: \(header)")
+        let defaultResponseSerializer = manager.responseSerializer
+        manager.responseSerializer = AFXMLDocumentResponseSerializer(XMLDocumentOptions: 0)
+        manager.responseSerializer.acceptableContentTypes = NSSet(objects: "application/atom+xml")
+        let dataTask = manager.dataTaskWithRequest(
+            request,
+            completionHandler: {
+                (response ,responseObject, error) in
+                completionHandler(response: response, responseObject: responseObject, error: error)
+                self.manager.responseSerializer = defaultResponseSerializer
+            }
+        )
+        dataTask.resume()
+    }
+
 }

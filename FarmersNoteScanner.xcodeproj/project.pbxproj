@@ -13,7 +13,6 @@
 		5D4F02B319F3DC3900F63B1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F02B119F3DC3900F63B1E /* MainMenu.xib */; };
 		5D4F02CB19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F02CA19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist */; };
 		5D4F02CF19F40C3B00F63B1E /* AtomXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F02CE19F40C3B00F63B1E /* AtomXML.swift */; };
-		5D8E079C19F535B600BFE497 /* Hatena.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E079B19F535B600BFE497 /* Hatena.swift */; };
 		9E3F9C905FA38D7A438E723C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8A526A782D297F49646574 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		5D4F02CA19F3E28500F63B1E /* org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = org.kompiro.FarmersNoteScanner.ScanSnapInfo.plist; sourceTree = "<group>"; };
 		5D4F02CC19F3EB8600F63B1E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		5D4F02CE19F40C3B00F63B1E /* AtomXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomXML.swift; sourceTree = "<group>"; };
-		5D8E079B19F535B600BFE497 /* Hatena.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hatena.swift; sourceTree = "<group>"; };
 		5DF9587D19F462A00086DE11 /* FarmersNoteScanner-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FarmersNoteScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		7B8A526A782D297F49646574 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9402141E8819255A584DCA5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				5D4F02CC19F3EB8600F63B1E /* MyPlayground.playground */,
 				5D4F02CE19F40C3B00F63B1E /* AtomXML.swift */,
 				5DF9587D19F462A00086DE11 /* FarmersNoteScanner-Bridging-Header.h */,
-				5D8E079B19F535B600BFE497 /* Hatena.swift */,
 			);
 			path = FarmersNoteScanner;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8E079C19F535B600BFE497 /* Hatena.swift in Sources */,
 				5D404D1D19FC9FCE00C3D4A7 /* HatenaClient.swift in Sources */,
 				5D4F02CF19F40C3B00F63B1E /* AtomXML.swift in Sources */,
 				5D4F02AE19F3DC3900F63B1E /* AppDelegate.swift in Sources */,

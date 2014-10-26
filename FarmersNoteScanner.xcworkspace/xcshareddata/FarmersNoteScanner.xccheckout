@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>461AE48F-D160-4F1B-BE93-027E85F6AB06</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FarmersNoteScanner</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3B1AF59C2BE7F404B6930A47703C2A067BF8038D</key>
+		<string>github.com:kompiro/FarmersNoteScanner.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FarmersNoteScanner.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3B1AF59C2BE7F404B6930A47703C2A067BF8038D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kompiro/FarmersNoteScanner.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3B1AF59C2BE7F404B6930A47703C2A067BF8038D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3B1AF59C2BE7F404B6930A47703C2A067BF8038D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FarmersNoteScanner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
